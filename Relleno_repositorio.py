@@ -35,6 +35,6 @@ if __name__ == "__main__":
             numero = int(args[0])
             funcion_relleno(numero)
         except ValueError:
-            print("Error: El argumento debe ser un n�mero entero.")
+            print("Error: El argumento debe ser un número entero.")
     else:
         funcion_relleno(0)
