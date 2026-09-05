@@ -1,0 +1,22 @@
+name: CI - Validación del Script Relleno
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Verificar sintaxis
+        run: python -m py_compile Relleno_repositorio.py
+      - name: Ejecutar con argumento 5
+        run: python Relleno_repositorio.py 5
+      - name: Ejecutar con argumento 200
+        run: python Relleno_repositorio.py 200
