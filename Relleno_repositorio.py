@@ -26,3 +26,15 @@ como regalo (y por que el numero no es tan grande) imprimire gracias una cantida
     else:
         print("Gracias por poner un argumento, pero al ser su valor absoluto mayor a 100 pues solo te dire gracias UNA vez, no hay que ser avariciosos en esta vida")
         print("Gracias.")
+
+if __name__ == "__main__":
+    import sys
+    args = sys.argv[1:]
+    if args:
+        try:
+            numero = int(args[0])
+            funcion_relleno(numero)
+        except ValueError:
+            print("Error: El argumento debe ser un número entero.")
+    else:
+        funcion_relleno(0)
