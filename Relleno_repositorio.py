@@ -16,6 +16,7 @@ def funcion_relleno(nada: int = 0):
         elif eleccion == "n":
             print("Bueno, gracias por no poner ningun argumento, hubiera simplemente dejado una funcion vacia.")
         else: 
+            print(f"{eleccion} no estaba entre las opciones, preferire ignorar este error ;)") #El hotfix fue que originalmente trataba un poco mal al usuario xd
             print(f"Claramente el input te daba DOS opciones, y para si, n para no, pero claro, el listillo tenia que poner {eleccion} para ver si pense en esa posibilidad.")
     elif nada == 3:
         print("El 3 no es particularmente el mejor numero que hay, claro, tiene las mejores multiplicaciones, pero siento que intenta ser mas importante de lo que es")
