@@ -16,7 +16,7 @@ def funcion_relleno(nada: int = 0):
         elif eleccion == "n":
             print("Bueno, gracias por no poner ningun argumento, hubiera simplemente dejado una funcion vacia.")
         else: 
-            print(f"Claramente el input te daba DOS opciones, y para si, n para no, pero claro, el listillo tenia que poner {eleccion} para ver si pense en esa posibilidad.")
+            print(f"{eleccion} no estaba entre las opciones, preferire ignorar este error ;)") #El hotfix fue que originalmente trataba un poco mal al usuario xd
     elif abs(nada) < 100:
         print("""Muchas gracias por poner un argumento (que no sea el 0)
 realmente se agradece que alguien se tome el tiempo con mi funcion
@@ -35,6 +35,6 @@ if __name__ == "__main__":
             numero = int(args[0])
             funcion_relleno(numero)
         except ValueError:
-            print("Error: El argumento debe ser un número entero.")
+            print("Error: El argumento debe ser un nï¿½mero entero.")
     else:
         funcion_relleno(0)
