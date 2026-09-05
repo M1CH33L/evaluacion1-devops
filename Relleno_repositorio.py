@@ -17,6 +17,8 @@ def funcion_relleno(nada: int = 0):
             print("Bueno, gracias por no poner ningun argumento, hubiera simplemente dejado una funcion vacia.")
         else: 
             print(f"Claramente el input te daba DOS opciones, y para si, n para no, pero claro, el listillo tenia que poner {eleccion} para ver si pense en esa posibilidad.")
+    elif nada == 42:
+        print("Por que todos los programadores estan obsesionados con el 42?")
     elif abs(nada) < 100:
         print("""Muchas gracias por poner un argumento (que no sea el 0)
 realmente se agradece que alguien se tome el tiempo con mi funcion
