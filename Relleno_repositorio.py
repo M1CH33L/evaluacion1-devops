@@ -22,6 +22,8 @@ def funcion_relleno(nada: int = 0):
         print("como castigo, un bucle infinito")
         while True:
             print("Nunca podras salir\n")
+    elif nada == 42:
+        print("Por que todos los programadores estan obsesionados con el 42?")
     elif abs(nada) < 100:
         print("""Muchas gracias por poner un argumento (que no sea el 0)
 realmente se agradece que alguien se tome el tiempo con mi funcion
@@ -40,6 +42,6 @@ if __name__ == "__main__":
             numero = int(args[0])
             funcion_relleno(numero)
         except ValueError:
-            print("Error: El argumento debe ser un n�mero entero.")
+            print("Error: El argumento debe ser un número entero.")
     else:
         funcion_relleno(0)
